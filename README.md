@@ -77,12 +77,12 @@ Follow these steps to set up the project locally:
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/AxelMardiyo/UKK-Perpustakaan-Sekolah.git
+git clone [https://github.com/Ryn276/UKK-Mardi-Perpus-.git]
 ```   
 Move into the project directory:
     
 ```bash
-cd UKK-Perpustakaan-Sekolah
+cd UKK-Mardi-Perpus
 ```
 
 ### 2️⃣ Install Backend Dependencies
