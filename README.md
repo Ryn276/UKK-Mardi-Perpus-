@@ -77,7 +77,7 @@ Follow these steps to set up the project locally:
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone [https://github.com/Ryn276/UKK-Mardi-Perpus-.git]
+git clone https://github.com/Ryn276/UKK-Mardi-Perpus-.git
 ```   
 Move into the project directory:
     
