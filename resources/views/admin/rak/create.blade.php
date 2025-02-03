@@ -3,7 +3,7 @@
 @section('header', 'Tambah Rak Baru')
 
 @section('content')
-    <div class="max-w-4xl mx-auto bg-gradient-to-r from-blue-500 to-blue-700 shadow-lg rounded-lg p-8">
+    <div class="max-w-4xl mx-auto bg-[#3B2818] shadow-lg rounded-lg p-8">
         <h2 class="text-3xl font-extrabold text-white mb-8">
             Tambah Rak Baru
         </h2>
@@ -54,7 +54,7 @@
             <div class="flex justify-end">
                 <button 
                     type="submit" 
-                    class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-lg shadow-md hover:from-blue-700 hover:to-blue-800 focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50"
+                    class="bg-[#5C3A21] text-white px-6 py-3 rounded-lg shadow-md hover:from-brown-700 hover:to-brown-800 focus:ring-2 focus:ring-brown-300 focus:ring-opacity-50"
                 >
                     Simpan
                 </button>

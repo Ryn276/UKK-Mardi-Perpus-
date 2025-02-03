@@ -3,7 +3,7 @@
 @section('header', 'Tambah Jenis Anggota Baru')
 
 @section('content')
-    <form action="{{ route('jenis_anggota.store') }}" method="POST" class="space-y-6 bg-gradient-to-r from-blue-500 to-blue-600 p-8 rounded-lg shadow-xl">
+    <form action="{{ route('jenis_anggota.store') }}" method="POST" class="space-y-6 bg-[#3B2818] p-8 rounded-lg shadow-xl">
         @csrf
 
         <div class="mb-4">
@@ -32,7 +32,7 @@
             <input type="text" id="keterangan" name="keterangan" class="mt-1 block w-full border p-2 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
         </div>
 
-        <button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded-md shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300">
+        <button type="submit" class="w-full bg-[#5C3A21] text-gold-400 px-6 py-3 rounded-md shadow-lg hover:bg-brown-800 focus:outline-none focus:ring-2 focus:ring-gold-500 transition duration-300">
             Simpan Jenis Anggota
         </button>
     </form>

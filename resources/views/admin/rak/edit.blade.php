@@ -3,7 +3,7 @@
 @section('header', 'Edit Rak')
 
 @section('content')
-    <div class="max-w-4xl mx-auto bg-gradient-to-r from-blue-600 to-blue-800 shadow-lg rounded-lg p-8">
+    <div class="max-w-4xl mx-auto bg-[#3B2818] shadow-lg rounded-lg p-8">
         <h2 class="text-3xl font-extrabold text-white mb-8">
             Edit Rak
         </h2>

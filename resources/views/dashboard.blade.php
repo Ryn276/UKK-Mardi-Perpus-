@@ -5,7 +5,7 @@
 @section('content')
     <div class="max-w-7xl mx-auto bg-gradient-to-br from-gray-100 via-white to-gray-50 p-10 rounded-xl shadow-2xl">
         <div class="text-center mb-12">
-            <h3 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-500">
+            <h3 class="text-4xl font-extrabold text-transparent bg-clip-text bg-[#5C3A21] from-indigo-500 to-purple-500">
                 Selamat Datang, Admin Perpustakaan!
             </h3>
             <p class="text-lg text-gray-500 mt-3">

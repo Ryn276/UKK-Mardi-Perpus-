@@ -8,7 +8,7 @@
         <h1 class="text-4xl font-semibold text-gray-800">
             {{ __('Manajemen Rak') }}
         </h1>
-        <a href="{{ route('rak.create') }}" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-300 transition duration-300">
+        <a href="{{ route('rak.create') }}" class="bg-[#3B2818] text-white px-6 py-3 rounded-lg shadow-md hover:bg-brown-700 focus:ring-2 focus:ring-brown-300 transition duration-300">
             Tambah Rak Baru
         </a>
     </div>
@@ -23,7 +23,7 @@
     <!-- Data Table -->
     <div class="overflow-x-auto bg-white shadow-lg rounded-lg">
         <table class="min-w-full text-sm text-left text-gray-700">
-            <thead class="bg-blue-500 text-white">
+            <thead class="bg-[#3B2818] text-white">
                 <tr>
                     <th class="px-6 py-3 text-xs font-medium uppercase tracking-wider">Kode Rak</th>
                     <th class="px-6 py-3 text-xs font-medium uppercase tracking-wider">Nama Rak</th>

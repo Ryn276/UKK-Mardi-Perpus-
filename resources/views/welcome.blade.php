@@ -95,7 +95,7 @@
                 </form>
                 @else
                 <a href="{{ route('login') }}" class="btn btn-blue">Masuk</a>
-                <a href="{{ route('register') }}" class="btn btn-green">Daftar</a>
+                <a href="{{ route('register') }}" class="btn btn-blue">Daftar</a>
                 @endauth
             </div>
         </div>
