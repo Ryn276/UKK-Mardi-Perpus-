@@ -21,7 +21,7 @@
 
         /* Navbar Hover Efek */
         .navbar a:hover {
-            color: #bbe1fa;
+            color:rgb(250, 207, 187);
             transform: scale(1.05);
         }
 
@@ -34,7 +34,7 @@
         /* Sidebar Hover Efek */
         aside .space-y-4 a:hover {
             background-color: #3b3b3b;
-            color: #00aaff;
+            color: #5C3A21;
             transition: all 0.3s ease;
         }
 
@@ -45,7 +45,7 @@
 
         /* Button Hover */
         button:hover {
-            background-color: #003366;
+            background-color: #3B2818;
             transform: translateY(-2px) scale(1.05);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
         }

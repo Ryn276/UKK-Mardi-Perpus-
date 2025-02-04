@@ -6,6 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ config('app.name', 'Admin Perpustakaan') }}</title>
     @vite('resources/css/app.css')
+    <style>
+        /* Responsif untuk layar kecil */
+        @media (max-width: 768px) {
+            .flex {
+                flex-direction: column;
+            }
+
+            /* Sidebar */
+            aside {
+                position: relative;
+                width: 100%;
+                height: auto;
+                padding: 10px;
+            }
+
+            /* Main Content */
+            main {
+                margin-left: 0;
+                margin-top: 10px; /* Mengurangi jarak atas */
+                padding: 10px; /* Mengurangi padding */
+            }
+
+            /* Menyesuaikan ukuran font di sidebar */
+            aside .text-lg {
+                font-size: 0.9rem;
+            }
+
+            /* Menyesuaikan tampilan menu di sidebar */
+            aside nav ul {
+                padding-left: 0;
+            }
+
+            aside nav ul li {
+                margin-bottom: 10px; /* Mengurangi jarak antar menu */
+            }
+        }
+
+        /* Responsif untuk layar lebih kecil dari 576px */
+        @media (max-width: 576px) {
+            aside .text-3xl {
+                font-size: 1.5rem;
+            }
+
+            aside .text-lg {
+                font-size: 0.9rem;
+            }
+
+            .text-2xl {
+                font-size: 1.5rem;
+            }
+
+            .bg-gray-100 {
+                padding: 5px;
+            }
+        }
+    </style>
 </head>
 
 <body class="bg-[#2B1D0E] text-[#D4AF37] font-sans">
@@ -13,15 +69,15 @@
     <div class="flex min-h-screen">
 
         <!-- Sidebar -->
-        <aside class="w-72 [#3E2C18] text-[#D4AF37] p-6 fixed top-0 left-0 h-screen shadow-lg z-10">
+        <aside class="w-72 [#3E2C18] text-[#D4AF37] p-4 fixed top-0 left-0 h-screen shadow-lg z-10">
             <div class="flex flex-col h-full">
-                <div class="mb-8 text-center">
+                <div class="mb-4 text-center">
                     <h3 class="text-3xl font-bold text-[#FFD700]">Admin Perpustakaan</h3>
                 </div>
 
                 <!-- Navigation -->
                 <nav>
-                    <ul class="space-y-4">
+                    <ul class="space-y-3">
                         <li>
                             <a href="{{ route('dashboard') }}" class="flex items-center text-lg px-4 py-2 rounded-lg hover:bg-[#5A3E22] transition duration-300 {{ request()->routeIs('dashboard') ? 'bg-[#5A3E22]' : '' }}">
                                 <i class="fas fa-tachometer-alt mr-3"></i> Dashboard
@@ -88,7 +144,7 @@
         </aside>
 
         <!-- Main Content -->
-        <main class="flex-1 ml-72 p-6 bg-gray-100">
+        <main class="flex-1 ml-72 p-4 bg-gray-100">
             <header class="bg-white shadow-md p-4 rounded-lg mb-6">
                 <h1 class="text-2xl font-semibold text-gray-800">@yield('header', 'Admin Dashboard')</h1>
             </header>

@@ -4,10 +4,10 @@
 
 @section('content')
     <div class="mb-4">
-        <a href="{{ route('pustaka.index') }}" class="bg-gray-500 text-white px-4 py-2 rounded">Kembali ke Daftar Pustaka</a>
+        <a href="{{ route('pustaka.index') }}" class="bg-[#3B2818] text-white px-4 py-2 rounded">Kembali ke Daftar Pustaka</a>
     </div>
 
-    <form action="{{ route('pustaka.store') }}" method="POST" enctype="multipart/form-data" class="bg-gradient-to-r from-blue-500 to-blue-600 p-8 rounded-lg shadow-xl space-y-6">
+    <form action="{{ route('pustaka.store') }}" method="POST" enctype="multipart/form-data" class="bg-[#5C3A21] p-8 rounded-lg shadow-xl space-y-6">
         @csrf
 
         <div class="mb-4">
@@ -147,7 +147,7 @@
         </div>
 
         <div class="mb-4">
-            <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300">
+            <button type="submit" class="bg-[#3B2818] text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300">
                 Simpan Pustaka
             </button>
         </div>

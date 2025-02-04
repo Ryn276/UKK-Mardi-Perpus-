@@ -10,12 +10,20 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
+            background-image: url('/images/Rak Buku.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100vw;
+            background-repeat: no-repeat;
+            background-color: rgba(61, 43, 31, 0.8); /* Dark chocolate transparan */
+            backdrop-filter: brightness(90%);
         }
         .navbar {
             transition: all 0.3s ease-in-out;
         }
         .navbar:hover {
-            background-color: #1e3a8a;
+            background-color: #3B2818;
         }
         .sidebar:hover {
             width: 280px;
@@ -24,7 +32,7 @@
             transition: background-color 0.3s, transform 0.3s;
         }
         .sidebar ul li a:hover {
-            background-color: #1d4ed8;
+            background-color: #5C3A21;
             transform: translateX(10px);
         }
         .table-hover tbody tr:hover {
@@ -37,13 +45,13 @@
         .table-cell {
             padding: 12px;
             font-size: 0.875rem;
-            color: #4B5563;
+            color:rgb(255, 255, 255);
         }
         .table-cell-head {
             padding: 12px;
             font-size: 1rem;
             font-weight: 600;
-            color: #1F2937;
+            color:rgb(255, 255, 255);
         }
     </style>
 </head>
@@ -51,7 +59,7 @@
 <body class="bg-gray-50">
 
     <!-- Navbar Section -->
-    <nav class="fixed top-0 left-0 w-full bg-gradient-to-r from-blue-600 to-blue-500 shadow-md z-20 transition-all">
+    <nav class="fixed top-0 left-0 w-full bg-[#5C3A21] shadow-md z-20 transition-all">
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <h1 class="text-3xl font-semibold text-white">
                 Perpustakaan Digital Sekolah
@@ -76,7 +84,7 @@
     <div class="flex pt-20">
 
         <!-- Sidebar -->
-        <aside class="sidebar w-64 bg-gray-900 text-white min-h-screen fixed top-0 left-0 shadow-lg transition-all">
+        <aside class="sidebar w-64 bg-[#3B2818] text-white min-h-screen fixed top-0 left-0 shadow-lg transition-all">
             <div class="px-6 py-8">
                 <h2 class="text-lg font-semibold mb-6 text-blue-200">Menu Navigasi</h2>
                 <ul class="space-y-4">
@@ -96,7 +104,7 @@
 
         <!-- Content Area -->
         <main class="flex-1 p-8 ml-64">
-            <h2 class="text-4xl font-semibold text-gray-800 text-center mb-8">Daftar Peminjaman</h2>
+            <h2 class="text-4xl font-semibold text-white text-center mb-8">Daftar Peminjaman</h2>
 
             <!-- Pesan Sukses -->
             @if (session('success'))
@@ -105,8 +113,8 @@
             </div>
             @endif
 
-            <table class="min-w-full table-auto bg-white rounded-lg shadow-md">
-                <thead class="table-header">
+            <table class="min-w-full table-auto bg-[#3D2B1F]/80 rounded-lg shadow-md">
+                <thead class="table-header bg-[#3D2B1F]">
                     <tr>
                         <th class="table-cell-head">No</th>
                         <th class="table-cell-head">Judul Buku</th>

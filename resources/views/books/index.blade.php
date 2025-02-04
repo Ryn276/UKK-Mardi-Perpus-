@@ -10,10 +10,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
 </head>
 
-<body class="antialiased bg-gray-100 font-sans">
+<body class="antialiased bg-[#3D2B1F]/80 font-sans bg-cover bg-center" style="background-image: url('/images/Rak Buku.jpg');">
 
     <!-- Navbar Section -->
-    <nav class="fixed top-0 left-0 w-full bg-gradient-to-r from-blue-600 to-blue-500/90 backdrop-blur text-white shadow-md z-20 transition-all">
+    <nav class="fixed top-0 left-0 w-full bg-[#5C3A21] backdrop-blur text-white shadow-md z-20 transition-all">
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <h1 class="text-3xl font-bold hover:text-blue-200 transition-colors">
                 Perpustakaan Digital Sekolah
@@ -37,17 +37,17 @@
     <!-- Main Layout -->
     <div class="flex pt-20">
         <!-- Sidebar -->
-        <aside class="w-64 bg-gray-900 text-white min-h-screen fixed top-0 left-0 shadow-lg transition-all hover:w-72">
+        <aside class="w-64 bg-[#3B2818] text-white min-h-screen fixed top-0 left-0 shadow-lg transition-all hover:w-72">
             <div class="px-6 py-8">
                 <h2 class="text-lg font-bold mb-6">Menu Navigasi</h2>
                 <ul class="space-y-4">
                     <li>
-                        <a href="{{ route('books.index') }}" class="flex items-center gap-2 p-2 rounded-md hover:bg-gray-800 hover:text-blue-300 transition-all animate__animated animate__fadeIn">
+                        <a href="{{ route('books.index') }}" class="flex items-center gap-2 p-2 rounded-md hover:bg-[#5C3A21] hover:text-white-300 transition-all animate__animated animate__fadeIn">
                             <span>📚</span> Daftar Buku
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('books.peminjaman') }}" class="flex items-center gap-2 p-2 rounded-md hover:bg-gray-800 hover:text-blue-300 transition-all animate__animated animate__fadeIn">
+                        <a href="{{ route('books.peminjaman') }}" class="flex items-center gap-2 p-2 rounded-md hover:bg-[#5C3A21] hover:text-white-300 transition-all animate__animated animate__fadeIn">
                             <span>📖</span> Transaksi
                         </a>
                     </li>
@@ -57,7 +57,7 @@
 
         <!-- Content Area -->
         <main class="flex-1 p-8 ml-64">
-            <h2 class="text-4xl font-semibold text-gray-800 text-center mb-8 animate__animated animate__fadeIn">Daftar Buku</h2>
+            <h2 class="text-4xl font-semibold text-white text-center mb-8 animate__animated animate__fadeIn">Daftar Buku</h2>
 
             @if (session('error'))
                 <div class="p-4 mb-4 text-red-800 bg-red-200 rounded-lg">
@@ -75,7 +75,7 @@
             <!-- Buku dalam Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 @if($pustakas->isEmpty())
-                    <div class="col-span-full text-center p-8 bg-gradient-to-r from-blue-50 to-blue-100 text-blue-900 border border-blue-300 rounded-xl shadow-lg">
+                    <div class="col-span-full text-center p-8 bg-gradient-to-r from-amber-50 to-amber-100 text-amber-900 border border-amber-300 rounded-xl shadow-lg">
                         <p class="text-2xl font-semibold">Tidak ada buku yang tersedia untuk dipinjam.</p>
                         <p class="text-md mt-3 text-gray-700">Silakan kembalikan buku terlebih dahulu agar Anda dapat meminjam buku lainnya.</p>
                     </div>
@@ -97,7 +97,7 @@
                                         <p class="text-gray-600 text-sm">Harga: <span class="font-medium">Rp{{ number_format($pustaka->harga_buku, 0, ',', '.') }}</span></p>
                                     </div>
                                     <div class="mt-6">
-                                        <a href="{{ route('books.detail', ['id' => $pustaka->id_pustaka]) }}" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 focus:ring-4 focus:ring-blue-300">
+                                        <a href="{{ route('books.detail', ['id' => $pustaka->id_pustaka]) }}" class="inline-block px-6 py-3 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition-colors duration-300 focus:ring-4 focus:ring-amber-300">
                                             Detail Buku
                                         </a>
                                     </div>

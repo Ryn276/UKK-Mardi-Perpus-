@@ -6,7 +6,7 @@
 <div class="flex justify-between items-center mb-6">
     <h1 class="text-2xl font-semibold text-gray-800">{{ __('Manajemen Pustaka') }}</h1>
     <a href="{{ route('pustaka.create') }}"
-        class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-600 transition duration-300">
+        class="bg-amber-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-amber-600 transition duration-300">
         Tambah Pustaka Baru
     </a>
 </div>
@@ -19,7 +19,7 @@
 
 <div class="overflow-x-auto bg-white shadow-md rounded-lg">
     <table class="min-w-full text-sm text-left text-gray-700">
-        <thead class="bg-blue-500 text-white">
+        <thead class="bg-amber-500 text-white">
             <tr>
                 <th class="px-4 py-3 border-b font-medium text-white-600">Gambar</th>
                 <th class="px-4 py-3 border-b font-medium text-white-600">Kode Pustaka</th>
